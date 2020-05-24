@@ -112,9 +112,9 @@ button
 }
 @media only screen and (max-width: 675px)
 {
-  *
+  .top-box,.left-box,.right-box
   {
-    position:static;
+    position: static;
   }
   .content
   {
