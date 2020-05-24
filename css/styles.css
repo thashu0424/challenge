@@ -112,13 +112,9 @@ button
 }
 @media only screen and (max-width: 675px)
 {
-  .top-box,.left-box,.right-box
+  .content
   {
-    width: 50%;
-    height: 50%;
-  }
-  .left-box
-  {
-    display: block;
+    display: flex;
+    flex-direction:column;
   }
 }
