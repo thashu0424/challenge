@@ -45,22 +45,21 @@ h4
   width: 625px;
   height: 425px;
   left: 30%;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 .top-box
 {
   border-radius: 8px 8px 0 0;
-  display: inline-block;
   background-color: white;
   position: absolute;
   top:0;
-  margin: auto;
   height:45%;
 }
 .left-box
 {
   color: white;
   border-radius:0 0 0 8px;
-  display: inline-block;
   background-color:rgb(32,178,170);
   position: absolute;
   bottom: 0;
@@ -72,7 +71,6 @@ h4
 {
   color: white;
   border-radius:0 0 8px 0;
-  display: inline-block;
   background-color: rgb(72,209,204);
   position: absolute;
   bottom: 0;
@@ -110,15 +108,31 @@ button
 {
   margin-top: 25px;
 }
-@media only screen and (max-width: 675px)
+@media only screen and (max-width: 768px)
 {
-  .top-box,.left-box,.right-box
+  .top-box
   {
-    position: static;
+    height: 100%;
+    width: 50%;
   }
   .content
   {
     display: flex;
     flex-direction:column;
+    margin-top: 100px;
+    margin-bottom: 400px;
+  }
+  .top-box,.left-box,.right-box
+  {
+    position: static;
+    padding-bottom: 20px;
+  }
+  .left-box
+  {
+    border-radius:0;
+  }
+  .right-box
+  {
+    border-radius:0 0 8px 8px;
   }
 }
